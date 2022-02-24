@@ -20,7 +20,6 @@ steps:
 
 - task: FortifySCA@7
   inputs:
-    licenseFile: 'C:\fortify_license\fortify.license'
     fortifyBuildId: '$(Build.BuildNumber)'
     runBuildTranslate: true
     applicationType: 'java'
@@ -29,4 +28,3 @@ steps:
     scaVerbose: true
     scaDebug: false
     runFortifyScan: true
-    fortifyScanType: 'Local'
