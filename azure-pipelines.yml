@@ -1,4 +1,15 @@
 # Starter pipeline
+- task: FortifySCA@7
+  inputs:
+    licenseFile: 'C:\fortify_license\fortify.license'
+    runBuildTranslate: true
+    applicationType: 'java'
+    runFortifyRulepackUpdate: false
+    runFortifyClean: true
+    scaVerbose: true
+    scaDebug: false
+    runFortifyScan: true
+    fortifyScanType: 'Local'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
